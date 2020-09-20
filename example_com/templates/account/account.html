@@ -1,0 +1,23 @@
+{% extends "shared/_layout.html" %}
+
+{% block title %}
+Template App - Account Home
+{% endblock %}
+
+{% block page_header %}
+    Account Page
+{% endblock %}
+
+{% block page_summary %}
+    This is your Account Page.
+{% endblock %}
+
+{% block main_content %}
+    <div class="body-header">
+        <h3>Hello, {{ name }}!!!</h3>
+    </div>
+{% endblock %}
+
+{% block additional_css %}
+    <link rel="stylesheet" href="/static/css/account.css">
+{% endblock %}

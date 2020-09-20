@@ -1,0 +1,32 @@
+{% extends "shared/_layout.html" %}
+
+{% block title %}
+Template App - Login
+{% endblock %}
+
+{% block page_header %}
+    Template App Login
+{% endblock %}
+
+{% block page_summary %}
+    Log into the Template App Accounts Page!
+{% endblock %}
+
+{% block main_content %}
+    <div class="form-container">
+        <form action="" method="POST" class="account-form">
+            <h1>Login</h1>
+            <input name="username" type="text" placeholder=" Your username" class="form-control" value="{{ username }}" required>
+            <input name="password" type="password" placeholder=" Password" class="form-control" value="{{ password }}" required>
+            <button type="submit" class="btn btn-success">Login</button>
+            <div style="clear: both;"></div>
+            {% if error %}
+                <div class="error-msg">{{ error }}</div>
+            {% endif %}
+        </form>
+    </div>
+{% endblock %}
+
+{% block additional_css %}
+    <link rel="stylesheet" href="/static/css/account.css">
+{% endblock %}
