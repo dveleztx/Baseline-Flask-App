@@ -15,7 +15,7 @@ def global_init():
         return
 
     # TODO: (To the end user) - Make sure to update this to YOUR database
-    conn_str = 'postgresql+psycopg2://postgres:dungeon-visor4me@localhost:5432/example_db'
+    conn_str = 'postgresql+psycopg2://postgres:postgres@localhost:5432/example_db'
     engine = sa.create_engine(conn_str, echo=False)
 
     __factory = orm.sessionmaker(bind=engine)
