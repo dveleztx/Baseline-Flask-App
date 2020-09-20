@@ -2,7 +2,7 @@
 import datetime
 import sqlalchemy
 from flask_login import UserMixin
-
+# Custom Imports
 from data.modelbase import SqlAlchemyBase
 
 
